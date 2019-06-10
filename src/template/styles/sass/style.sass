@@ -53,7 +53,7 @@ input
 	-moz-appearance: none
 	appearance: none
 
-input, textarea, button
+input, textarea, button, a
  outline: none
 
 /* Form elements */
@@ -296,7 +296,6 @@ input, .btn, .slick-slide, textarea
 	background-color: #f5f4f0
 
 .page
-	padding-bottom: 35px
 	&__wrap
 		padding-top: 35px
 		padding-bottom: 60px
@@ -309,6 +308,8 @@ input, .btn, .slick-slide, textarea
 		font-weight: 700
 		line-height: 50px
 		margin-bottom: 40px
+		&_pt
+			padding-top: 40px
 
 
 
@@ -627,6 +628,39 @@ input, .btn, .slick-slide, textarea
 
 	&_gray
 		background-color: #f5f4f0
+		.product
+			&__content
+				background-color: #f5f4f0
+	&_card
+		.product
+			&__img
+				width: 285px
+				min-height: 245px
+			&__content
+				width: calc(100% - 285px)
+				padding-top: 0
+				padding-left: 0
+				padding-bottom: 0
+				
+			&__name, &__data
+				margin-left: 35px
+			&__name
+				margin-bottom: 25px
+			&__share
+				display: none
+			&__buy
+				padding: 14px 20px 17px 35px
+				background-color: #fff
+				background-color: #f5f4f0
+			&__price
+				justify-content: space-between
+			&__price
+				margin-right: 0
+				.price
+
+				
+
+				
 			
 
 .advantages
@@ -698,6 +732,40 @@ input, .btn, .slick-slide, textarea
 		font-weight: 700
 		margin-top: 55px
 		margin-bottom: 30px
+	h3
+		font-size: 22px
+		font-weight: 700
+		margin-top: 25px
+		margin-bottom: 15px
+		&:first-of-type
+			margin-top: 0
+
+	.dl
+		dl
+			display: flex
+			flex-wrap: wrap
+			margin-bottom: 8px
+			&:last-of-type
+				margin-bottom: 0
+		dt
+			width: 55%
+			position: relative
+			color: #565656
+			&:before
+				content: ''
+				border-top: 1px dotted #cbcbcb
+				position: absolute
+				top: 14px
+				left: 0
+				right: 5px
+			span
+				z-index: 1
+				position: relative
+				background-color: #f5f4f0
+				padding-right: 4px
+				display: inline-block
+		dd
+			width: 45%
 	ul
 		margin-top: 10px
 		margin-bottom: 10px
@@ -795,6 +863,7 @@ input, .btn, .slick-slide, textarea
 
 
 .contacts
+	padding-top: 42px
 	&__data
 		width: 400px
 		&-text
@@ -844,6 +913,35 @@ input, .btn, .slick-slide, textarea
 		font-weight: 600
 		line-height: 18px
 		text-align: center
+
+.card
+	&__advantages
+		margin-top: 55px
+		margin-bottom: 55px
+	&__tabs
+		margin-bottom: 20px
+
+
+.tabs
+	&__nav
+		border: 2px solid #4d4d4d
+		li
+			font-size: 16px
+			font-weight: 700
+			&.ui-state-active
+				a
+					color: #fff
+					background-color: #4d4d4d
+		a
+			color: #363636
+			padding: 15.5px 30px
+			display: block
+
+	&__list
+		background-color: #f5f4f0
+		padding: 30px 35px
+
+
 
 .footer
 	color: #fff

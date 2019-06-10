@@ -34,7 +34,7 @@ $(document).ready(function($) {
 		}
 	});
 
-	$(window).on('resize, load', function(event) {
+	$(window).on('resize load', function(event) {
 		if($(window).width()>=992){
 			navBlockList.removeAttr('style');
 		}
@@ -42,7 +42,8 @@ $(document).ready(function($) {
 			nav.removeAttr('style');
 			hum.removeClass(humClass);
 		} 
-		if($(window).width()<767){
-		}
 	});
+
+
+	$('.tabs').tabs();
 });

@@ -189,7 +189,7 @@ input {
   -moz-appearance: none;
   appearance: none; }
 
-input, textarea, button {
+input, textarea, button, a {
   outline: none; }
 
 /* Form elements */
@@ -450,20 +450,22 @@ input, .btn, .slick-slide, textarea {
 .bg-gray {
   background-color: #f5f4f0; }
 
-.page {
-  padding-bottom: 35px; }
-  .page__wrap {
-    padding-top: 35px;
-    padding-bottom: 60px;
-    border-top: 2px solid #e3e3e3; }
-  .page__breadcrumbs {
-    padding-top: 5px;
-    margin-bottom: 30px; }
-  .page__title {
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 50px;
-    margin-bottom: 40px; }
+.page__wrap {
+  padding-top: 35px;
+  padding-bottom: 60px;
+  border-top: 2px solid #e3e3e3; }
+
+.page__breadcrumbs {
+  padding-top: 5px;
+  margin-bottom: 30px; }
+
+.page__title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 40px; }
+  .page__title_pt {
+    padding-top: 40px; }
 
 .catalog {
   padding-top: 80px;
@@ -788,6 +790,34 @@ input, .btn, .slick-slide, textarea {
         display: none; }
   .product_gray {
     background-color: #f5f4f0; }
+    .product_gray .product__content {
+      background-color: #f5f4f0; }
+  .product_card .product__img {
+    width: 285px;
+    min-height: 245px; }
+  .product_card .product__content {
+    width: -webkit-calc(100% - 285px);
+    width: calc(100% - 285px);
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0; }
+  .product_card .product__name, .product_card .product__data {
+    margin-left: 35px; }
+  .product_card .product__name {
+    margin-bottom: 25px; }
+  .product_card .product__share {
+    display: none; }
+  .product_card .product__buy {
+    padding: 14px 20px 17px 35px;
+    background-color: #fff;
+    background-color: #f5f4f0; }
+  .product_card .product__price {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .product_card .product__price {
+    margin-right: 0; }
 
 .advantages {
   margin-top: 60px; }
@@ -872,6 +902,43 @@ input, .btn, .slick-slide, textarea {
     font-weight: 700;
     margin-top: 55px;
     margin-bottom: 30px; }
+  .text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px; }
+    .text h3:first-of-type {
+      margin-top: 0; }
+  .text .dl dl {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 8px; }
+    .text .dl dl:last-of-type {
+      margin-bottom: 0; }
+  .text .dl dt {
+    width: 55%;
+    position: relative;
+    color: #565656; }
+    .text .dl dt:before {
+      content: '';
+      border-top: 1px dotted #cbcbcb;
+      position: absolute;
+      top: 14px;
+      left: 0;
+      right: 5px; }
+    .text .dl dt span {
+      z-index: 1;
+      position: relative;
+      background-color: #f5f4f0;
+      padding-right: 4px;
+      display: inline-block; }
+  .text .dl dd {
+    width: 45%; }
   .text ul {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -962,34 +1029,34 @@ input, .btn, .slick-slide, textarea {
     .about__text p {
       margin-bottom: 0; }
 
-.contacts__data {
-  width: 400px; }
-  .contacts__data-text {
+.contacts {
+  padding-top: 42px; }
+  .contacts__data {
+    width: 400px; }
+    .contacts__data-text {
+      font-size: 14px; }
+      .contacts__data-text p {
+        margin-bottom: 3px; }
+        .contacts__data-text p:last-of-type {
+          margin-bottom: 0; }
+  .contacts__map {
+    width: -webkit-calc(100% - 400px);
+    width: calc(100% - 400px);
+    min-height: 275px;
+    position: relative; }
+    .contacts__map #map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+  .contacts__text {
+    width: 100%;
     font-size: 14px; }
-    .contacts__data-text p {
+    .contacts__text p {
       margin-bottom: 3px; }
-      .contacts__data-text p:last-of-type {
+      .contacts__text p:last-of-type {
         margin-bottom: 0; }
-
-.contacts__map {
-  width: -webkit-calc(100% - 400px);
-  width: calc(100% - 400px);
-  min-height: 275px;
-  position: relative; }
-  .contacts__map #map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-
-.contacts__text {
-  width: 100%;
-  font-size: 14px; }
-  .contacts__text p {
-    margin-bottom: 3px; }
-    .contacts__text p:last-of-type {
-      margin-bottom: 0; }
 
 .services {
   overflow: hidden;
@@ -1024,6 +1091,30 @@ input, .btn, .slick-slide, textarea {
     font-weight: 600;
     line-height: 18px;
     text-align: center; }
+
+.card__advantages {
+  margin-top: 55px;
+  margin-bottom: 55px; }
+
+.card__tabs {
+  margin-bottom: 20px; }
+
+.tabs__nav {
+  border: 2px solid #4d4d4d; }
+  .tabs__nav li {
+    font-size: 16px;
+    font-weight: 700; }
+    .tabs__nav li.ui-state-active a {
+      color: #fff;
+      background-color: #4d4d4d; }
+  .tabs__nav a {
+    color: #363636;
+    padding: 15.5px 30px;
+    display: block; }
+
+.tabs__list {
+  background-color: #f5f4f0;
+  padding: 30px 35px; }
 
 .footer {
   color: #fff;
