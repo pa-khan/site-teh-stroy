@@ -184,7 +184,12 @@
 				height: 12px
 				display: inline-block
 				margin-left: 10px
+				transition: .3s
+				transform: rotate(-90deg)
 				background: url('../../img/chevron-down-black.png') no-repeat center right
+			&_open
+				&:after
+					transform: rotate(0deg)
 		&__list
 			display: none
 			margin-top: 20px
@@ -546,3 +551,6 @@
 		display: none
 	
 
+@media screen and (max-width: 530px)
+	.product
+		width: 100%

@@ -666,7 +666,8 @@ input, .btn, .slick-slide, textarea {
     min-height: 275px;
     display: block;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .product__content {
     width: -webkit-calc(100% - 255px);
     width: calc(100% - 255px);

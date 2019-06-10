@@ -156,7 +156,16 @@
       height: 12px;
       display: inline-block;
       margin-left: 10px;
+      -webkit-transition: .3s;
+      transition: .3s;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg);
       background: url("../../img/chevron-down-black.png") no-repeat center right; }
+    .nav-block__title_open:after {
+      -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotate(0deg); }
   .nav-block__list {
     display: none;
     margin-top: 20px; }
@@ -486,3 +495,7 @@
     display: block; }
   .hidden-xs {
     display: none; } }
+
+@media screen and (max-width: 530px) {
+  .product {
+    width: 100%; } }
