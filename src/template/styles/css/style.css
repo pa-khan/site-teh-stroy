@@ -467,6 +467,10 @@ input, .btn, .slick-slide, textarea {
   .page__title_pt {
     padding-top: 40px; }
 
+.page_main .page__wrap {
+  padding-top: 90px;
+  border-top: none; }
+
 .catalog {
   padding-top: 80px;
   padding-bottom: 90px;
@@ -1005,7 +1009,7 @@ input, .btn, .slick-slide, textarea {
     margin-bottom: 30px; }
 
 .about {
-  padding-top: 75px;
+  padding-top: 20px;
   padding-bottom: 90px; }
   .about__title {
     text-align: center;

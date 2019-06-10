@@ -172,6 +172,9 @@
     margin-bottom: 17px; }
   .contacts {
     padding-top: 0; }
+  .page_main .page__wrap {
+    padding-top: 30px;
+    padding-bottom: 10px; }
   .footer__left {
     width: 70%; }
   .footer__right {
